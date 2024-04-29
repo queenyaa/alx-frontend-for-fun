@@ -20,7 +20,10 @@ def convert_markdown_to_html(markdown_file, output_file):
     in_list = False
 
     for line in markdown_lines:
-        if line.startswith('- '):
+        if line.startswith('#'):
+            level = line.count('#')
+            html_content.append(f'<h{level}>{line.strip()[level+1:]}</h{level}>\n')
+        elif line.startswith('- '):
             if not in_list:
                 html_content.append('<ul>\n')
                 in_list = True
