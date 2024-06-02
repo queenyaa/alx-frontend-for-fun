@@ -1,0 +1,7 @@
+/* Task 13: Create classes with different widths */
+// Create .col-* classes using @for statement
+@for $i from 1 through 4 {
+    .col-#{$i} {
+      width: percentage(1 / $i);
+    }
+  }
