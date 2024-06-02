@@ -1,0 +1,10 @@
+/* Assign text colors to HTML elements using nested declarations */
+// Apply styles
+body {
+    color: #3D3D3D;
+
+    // Text color #FF0000 to elements of class .red that are the first children of the body
+    > .red {
+      color: #FF0000;
+    }
+  }
