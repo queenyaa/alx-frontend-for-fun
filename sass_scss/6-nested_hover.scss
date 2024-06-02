@@ -1,0 +1,8 @@
+/* Assign text colors to button tags with hover effect using nested declarations */
+button {
+    color: #FF0000;
+    
+    &:hover {
+      color: #00FF00;
+    }
+  }
