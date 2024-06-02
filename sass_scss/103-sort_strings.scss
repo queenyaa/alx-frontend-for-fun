@@ -1,0 +1,9 @@
+/* Task 16: Sort a list of strings and print the sorted list in debug output */
+// Define the list to sort
+$list_to_sort: john anna zoe kim felicia carrie;
+
+// Sort the list
+$list_sorted: sort($list_to_sort);
+
+// Print the sorted list in debug output
+@debug $list_sorted;
